@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Health Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>🖥️ SysHealth</h2>
+
+        <ul>
+            <li class="active">Dashboard</li>
+            <li>Performance</li>
+            <li>Security</li>
+            <li>Logs</li>
+            <li>Settings</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <div class="header">
+            <h1>System Health Dashboard</h1>
+            <p>Real-Time System Monitoring</p>
+        </div>
+
+        <!-- Cards -->
+        <div class="cards">
+
+            <div class="card">
+                <h3>CPU Usage</h3>
+                <h2 id="cpu">0%</h2>
+            </div>
+
+            <div class="card">
+                <h3>RAM Usage</h3>
+                <h2 id="ram">0%</h2>
+            </div>
+
+            <div class="card">
+                <h3>Disk Usage</h3>
+                <h2 id="disk">0%</h2>
+            </div>
+
+            <div class="card">
+                <h3>Network</h3>
+                <h2 id="network">Healthy</h2>
+            </div>
+
+        </div>
+        <!-- Progress Bars -->
+
+<div class="performance-section">
+
+    <h2>Performance Overview</h2>
+
+    <div class="progress-card">
+        <p>CPU Load</p>
+        <div class="progress-bar">
+            <div id="cpu-bar" class="fill"></div>
+        </div>
+    </div>
+
+    <div class="progress-card">
+        <p>RAM Load</p>
+        <div class="progress-bar">
+            <div id="ram-bar" class="fill"></div>
+        </div>
+    </div>
+
+    <div class="progress-card">
+        <p>Disk Usage</p>
+        <div class="progress-bar">
+            <div id="disk-bar" class="fill"></div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Activity Logs -->
+
+<div class="logs-section">
+    <h2>🟢 Live System Logs</h2>
+
+    <div class="logs-box" id="logs">
+
+    </div>
+</div>
+
+        <!-- Alert Section -->
+        <div class="alerts">
+            <h2>⚠️ System Alerts</h2>
+
+            <div class="alert-box">
+                <p id="alert-message">
+                    System Running Smoothly
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
